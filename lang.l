@@ -50,7 +50,7 @@ number                      [0-9]
                                     DO_RETURN(VARIABLE);
                                 }
 
- ?-[number]+                    {
+ -?[number]+                    {
                                     yylval.int_val = atoi(yytext);
                                     DO_RETURN(INT_VAL);
                                 }
