@@ -3,3 +3,5 @@ test/
 obj/
 
 *.o
+langparse.c
+langparse.h
