@@ -18,7 +18,7 @@
  /* union defines the type for lexical values */
 %union{
     int             int_val;
-    char*           str_val;
+    std::string*    str_val;
     cProgramNode*   program_node;
     cStmtsNode*     stmts_node;
     cStmtNode*      stmt_node;
@@ -65,7 +65,7 @@ stmts:      stmts stmt          { $$ = $1; $$->Insert($2); }
 
 stmt:       expr                { $$ = $1; }
         |   POP '(' VARIABLE ')'
-                                { $$ = new cPopNode($3); }
+                                { $$ = new cPopNode(*($3)); }
         |   PRINT               { $$ = new cPrintNode(); }
         |   error ';'           {}                      
 

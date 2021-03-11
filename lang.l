@@ -46,7 +46,8 @@ number                      [0-9]
 
  /*Others*/
  {variable}                     {
-                                    yylval.str_val = yytext;
+                                    std::string *str = new std::string(yytext);
+                                    yylval.str_val = str;
                                     DO_RETURN(VARIABLE);
                                 }
 
