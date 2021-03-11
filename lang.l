@@ -34,7 +34,7 @@ number                      [0-9]
 
 
  /*Punctuation*/
-[+\-*\/]                        {
+[()+\-*\/]                      {
                                     DO_RETURN(yytext[0]);
                                 }
 
@@ -46,10 +46,12 @@ number                      [0-9]
 
  /*Others*/
  {variable}                     {
+                                    yylval.str_val = yytext;
                                     DO_RETURN(VARIABLE);
                                 }
 
  ?-[number]+                    {
+                                    yylval.int_val = atoi(yytext);
                                     DO_RETURN(INT_VAL);
                                 }
 
