@@ -19,6 +19,10 @@
 %union{
     int             int_val;
     std::string     str_val;
+    cProgramNode*   program_node;
+    cStmtsNode*     stmts;
+    cStmtNode*      stmt;
+    cExprNode*      expr_node;
     }
 
 %{
