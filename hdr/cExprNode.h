@@ -7,5 +7,5 @@ class cExprNode : cStmtNode
 protected:
 
 public:
-    cExprNode() : cStmtNode() {}
+    cExprNode();
 };
