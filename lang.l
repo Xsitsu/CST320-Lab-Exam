@@ -9,6 +9,7 @@
 
 #include <string>
 
+#include "astnodes.h"
 #include "lex.h"
 #include "langparse.h"
 
