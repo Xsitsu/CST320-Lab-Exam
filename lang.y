@@ -63,7 +63,7 @@ stmts:      stmts stmt          { $$ = $1; $$->Insert($2); }
         |   stmt                { $$ = new cStmtsNode($1); }
 
 stmt:       expr                { $$ = $1; }
-        |   POP '(' IDENTIFIER ')'
+        |   POP '(' VARIABLE ')'
                                 { $$ = new cPopNode($3); }
         |   PRINT               { $$ = new cPrintNode(); }
         |   error ';'           {}                      
