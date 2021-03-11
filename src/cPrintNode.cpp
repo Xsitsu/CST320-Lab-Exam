@@ -1,5 +1,9 @@
 #include "cPrintNode.h"
 
+#include <iostream>
+
+#include "lex.h"
+
 cPrintNode::cPrintNode() : cStmtNode()
 {
 
@@ -7,7 +11,10 @@ cPrintNode::cPrintNode() : cStmtNode()
 
 void cPrintNode::Traverse()
 {
-    // TODO: print out stack
+    while (runtime->StackSize() > 0)
+    {
+        std::cout << runtime->PopStack() << std::endl;
+    }
 
     this->cAstNode::Traverse();
 }

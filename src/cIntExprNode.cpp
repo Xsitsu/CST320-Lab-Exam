@@ -1,5 +1,7 @@
 #include "cIntExprNode.h"
 
+#include "lex.h"
+
 cIntExprNode::cIntExprNode(int value) : cExprNode()
 {
     this->m_value = value;
@@ -7,7 +9,7 @@ cIntExprNode::cIntExprNode(int value) : cExprNode()
 
 void cIntExprNode::Traverse()
 {
-    // TODO: Push value on stack
+    runtime->PushStack(this->m_value);
 
     this->cAstNode::Traverse();
 }

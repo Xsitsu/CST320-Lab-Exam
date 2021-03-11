@@ -1,5 +1,7 @@
 #include "cPopNode.h"
 
+#include "lex.h"
+
 cPopNode::cPopNode(std::string varName) : cStmtNode()
 {
     this->m_varName = varName;
@@ -7,7 +9,7 @@ cPopNode::cPopNode(std::string varName) : cStmtNode()
 
 void cPopNode::Traverse()
 {
-    // TODO: pop to variable
+    runtime->SetVariable(this->m_varName, runtime->PopStack());
 
     this->cAstNode::Traverse();
 }
