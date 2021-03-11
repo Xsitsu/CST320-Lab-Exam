@@ -26,6 +26,7 @@ clean:
 	rm -rf $(OBJ)
 	rm -f *.o
 	rm -f $(PROG)
+	rm -f langlex.c
 	rm -f langparse.c
 	rm -f langparse.h
 

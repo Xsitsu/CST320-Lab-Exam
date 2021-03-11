@@ -3,5 +3,6 @@ test/
 obj/
 
 *.o
+langlex.c
 langparse.c
 langparse.h
