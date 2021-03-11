@@ -11,6 +11,8 @@
 
 #include "lex.h"
 
+#include "fileopen.h"
+
 int main(int argc, char **argv)
 {
     int result = 0;
