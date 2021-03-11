@@ -18,7 +18,7 @@
  /* union defines the type for lexical values */
 %union{
     int             int_val;
-    std::string     str_val;
+    char*           str_val;
     cProgramNode*   program_node;
     cStmtsNode*     stmts_node;
     cStmtNode*      stmt_node;
