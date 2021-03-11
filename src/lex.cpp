@@ -1,3 +1,3 @@
 #include "lex.h"
 
-Variables *variables;
+Runtime *runtime;

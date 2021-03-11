@@ -2,7 +2,7 @@
 
 
 #include "cAstNode.h"
-#include "Variables.h"
+#include "Runtime.h"
 
 int yyparse();                          // parsing function
 int yylex();                            // scanning function
@@ -12,4 +12,4 @@ extern int yynerrs;                     // Num of compile errors
 extern FILE *yyin;                      // FILE pointer for input
 extern cAstNode *yyast_root;            // root of AST
 
-extern Variables *variables;
+extern Runtime *runtime;

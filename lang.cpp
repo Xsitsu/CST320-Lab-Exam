@@ -24,7 +24,7 @@ int main(int argc, char **argv)
         exit(open_result);
     }
 
-    variables = new Variables();
+    runtime = new Runtime();
     result = yyparse();
     if (yyast_root != nullptr)
     {
