@@ -2,7 +2,7 @@
 
 #include "cAstNode.h"
 
-class cStmtNode : cAstNode
+class cStmtNode : public cAstNode
 {
 protected:
 

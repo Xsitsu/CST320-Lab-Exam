@@ -2,7 +2,7 @@
 
 #include "cStmtNode.h"
 
-class cPrintNode : cStmtNode
+class cPrintNode : public cStmtNode
 {
 protected:
 

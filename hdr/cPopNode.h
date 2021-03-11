@@ -4,7 +4,7 @@
 
 #include <string>
 
-class cPopNode : cStmtNode
+class cPopNode : public cStmtNode
 {
 protected:
     std::string m_varName;

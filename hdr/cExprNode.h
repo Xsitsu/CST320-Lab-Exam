@@ -2,7 +2,7 @@
 
 #include "cStmtNode.h"
 
-class cExprNode : cStmtNode
+class cExprNode : public cStmtNode
 {
 protected:
 

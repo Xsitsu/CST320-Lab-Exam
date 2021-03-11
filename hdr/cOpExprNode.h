@@ -2,7 +2,7 @@
 
 #include "cExprNode.h"
 
-class cOpExprNode : cExprNode
+class cOpExprNode : public cExprNode
 {
 protected:
     char m_op;

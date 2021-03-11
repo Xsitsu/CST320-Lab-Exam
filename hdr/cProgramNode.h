@@ -3,7 +3,7 @@
 #include "cAstNode.h"
 #include "cStmtsNode.h"
 
-class cProgramNode : cAstNode
+class cProgramNode : public cAstNode
 {
 protected:
 
