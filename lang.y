@@ -20,8 +20,8 @@
     int             int_val;
     std::string     str_val;
     cProgramNode*   program_node;
-    cStmtsNode*     stmts;
-    cStmtNode*      stmt;
+    cStmtsNode*     stmts_node;
+    cStmtNode*      stmt_node;
     cExprNode*      expr_node;
     }
 

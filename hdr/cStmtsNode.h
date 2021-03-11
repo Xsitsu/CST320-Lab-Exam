@@ -1,6 +1,7 @@
 #pragma once
 
 #include "cAstNode.h"
+#include "cStmtNode.h"
 
 class cStmtsNode : public cAstNode
 {
