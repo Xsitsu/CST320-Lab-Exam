@@ -24,10 +24,10 @@ void Runtime::SetVariable(std::string identifier, int value)
 
 int Runtime::PopStack()
 {
-    if (this->StackSize > 0)
+    if (this->StackSize() > 0)
     {
         int val = this->stack.top();
-        this->stack.pop;
+        this->stack.pop();
         return val;
     }
     return 0;
