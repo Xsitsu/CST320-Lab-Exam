@@ -22,6 +22,8 @@ PROG = lang
 
 all: $(PROG)
 
+objs: $(OBJS)
+
 clean:
 	rm -rf $(OBJ)
 	rm -f *.o

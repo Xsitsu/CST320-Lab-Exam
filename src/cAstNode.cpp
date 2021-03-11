@@ -8,7 +8,7 @@ void cAstNode::AddChild(cAstNode *node)
 cAstNode* cAstNode::GetChild(int index)
 {
     if (index >= (int)this->m_children.size()) return nullptr;
-    return this->m_children[child];
+    return this->m_children[index];
 }
 
 int cAstNode::NumChildren()
@@ -23,7 +23,7 @@ cAstNode::cAstNode() : m_children()
 
 void cAstNode::Traverse()
 {
-    foreach (auto child : this->m_children)
+    for (auto child : this->m_children)
     {
         child->Traverse();
     }
