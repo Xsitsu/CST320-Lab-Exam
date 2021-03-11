@@ -10,7 +10,6 @@
 #include <iostream>
 
 #include "lex.h"
-
 #include "fileopen.h"
 
 int main(int argc, char **argv)
@@ -25,6 +24,7 @@ int main(int argc, char **argv)
         exit(open_result);
     }
 
+    variables = new Variables();
     result = yyparse();
     if (yyast_root != nullptr)
     {
