@@ -7,5 +7,7 @@ class cPrintNode : cStmtNode
 protected:
 
 public:
+    cPrintNode();
 
+    virtual void Traverse();
 };
