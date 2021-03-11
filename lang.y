@@ -35,6 +35,7 @@
 %start  program
 
 %token <str_val>    VARIABLE
+%token <int_val>    INT_VAL
 
 %token POP
 %token PRINT
@@ -51,7 +52,7 @@
 
 
 
-program: PROGRAM stmts          { $$ = new cProgramNode($2);
+program: stmts                  { $$ = new cProgramNode($1);
                                   yyast_root = $$;
                                   if (yynerrs == 0) 
                                       YYACCEPT;
