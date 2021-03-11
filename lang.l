@@ -7,6 +7,8 @@
 // Author: Jacob Locke
 //
 
+#include <string>
+
 #include "lex.h"
 #include "langparse.h"
 

@@ -8,6 +8,7 @@
 //
 
 #include <iostream>
+#include <string>
 #include "lex.h"
 #include "astnodes.h"
 
