@@ -8,7 +8,7 @@ protected:
     int m_value;
 
 public:
-    cIntexprNode(int value);
+    cIntExprNode(int value);
 
     virtual void Traverse();
 };
